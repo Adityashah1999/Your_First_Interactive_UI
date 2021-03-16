@@ -1,4 +1,4 @@
-package com.aditya.hellotoast;
+package com.aditya.hellotoastchallenge;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,13 +11,13 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private int mCount = 0;
-    private TextView mshowCount;
+    private TextView mShowCount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mshowCount = (TextView) findViewById(R.id.show_count);
+        mShowCount = (TextView) findViewById(R.id.show_count);
     }
 
     public void showToast(View view) {
@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     public void countUp(View view) {
         mCount++;
-        if (mshowCount != null) {
-            mshowCount.setText(Integer.toString(mCount));
+        if (mShowCount != null) {
+            mShowCount.setText(Integer.toString(mCount));
         }
     }
 }
