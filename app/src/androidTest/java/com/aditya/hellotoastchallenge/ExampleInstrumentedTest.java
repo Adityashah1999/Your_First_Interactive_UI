@@ -1,4 +1,4 @@
-package com.aditya.hellotoast;
+package com.aditya.hellotoastchallenge;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.aditya.hellotoast", appContext.getPackageName());
+        assertEquals("com.aditya.hellotoastchallenge", appContext.getPackageName());
     }
 }
